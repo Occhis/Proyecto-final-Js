@@ -59,12 +59,17 @@ function mostrarProductos(lista) {
     card.className = "evento-card";
 
     const nombre = producto.title || producto.name || "Sin nombre";
-    // Lee el precio en centavos y conviértelo a número decimal
     const precio = producto.priceCents !== undefined
         ? Number(producto.priceCents) / 100
         : 0;
-    
     const id = String(producto.id);
+
+    // Corrige la ruta de la imagen
+    let imagen = producto.image || producto.imagen || "products/default.jpg";
+    // Si la ruta comienza con "../products/", reemplázala por "products/"
+    if (imagen.startsWith("../products/")) {
+        imagen = imagen.replace("../products/", "products/");
+    }
 
     card.innerHTML = `
       <img src="${imagen}" alt="${nombre}" class="evento-img">
