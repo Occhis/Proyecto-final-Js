@@ -233,8 +233,6 @@ function mostrarSeccionCheckout() {
                     </div>
                 </label>
             `).join("");
-        
-        // Agregar listener (solo una vez) para recalcular total al cambiar método
         if (!metodosContainer.dataset.listenerAttached) {
             metodosContainer.addEventListener("change", (e) => {
                 if (e.target && e.target.name === "metodoPago") {
@@ -245,7 +243,6 @@ function mostrarSeccionCheckout() {
         }
     }
     
-    // Pre-completar datos del usuario
     if (configuracion.usuario) {
         const usuario = configuracion.usuario;
         document.getElementById("nombre").value = usuario.nombre;
@@ -257,11 +254,10 @@ function mostrarSeccionCheckout() {
     }
 
 
-// recalcular para que el total se muestre correctamente al abrir checkout
 calcularTotal();
 }
 function validarFormularioCheckout() {
-    // Obtén los valores de los campos
+    
     const nombre = document.getElementById("nombre").value.trim();
     const email = document.getElementById("email").value.trim();
     const telefono = document.getElementById("telefono").value.trim();
@@ -269,7 +265,7 @@ function validarFormularioCheckout() {
     const ciudad = document.getElementById("ciudad").value.trim();
     const codigoPostal = document.getElementById("codigo-postal").value.trim();
 
-    // Validaciones básicas
+    // Validaciones
     if (!nombre) {
         mostrarNotificacion("El nombre es obligatorio", "warning");
         return false;
@@ -356,7 +352,7 @@ function finalizarCompra() {
         cuponAplicado = null;
         localStorage.removeItem("carrito");
         
-        // Mostrar mensaje de éxito
+
         mostrarCompraExitosa(compra);
         
     }, 2000);
@@ -384,7 +380,6 @@ function mostrarCompraExitosa(compra) {
         </div>
     `;
     
-    // Ocultar secciones innecesarias
     const totalContainer = document.querySelector(".total-container");
     if (totalContainer) totalContainer.style.display = "none";
     ocultarSeccionCheckout();
@@ -412,7 +407,7 @@ function mostrarNotificacion(mensaje, tipo = "info") {
     }, 4000);
 }
 
-/* ---------- SweetAlert para vaciar carrito (reemplaza confirm) ---------- */
+/* ---------- SweetAlert para vaciar carrito ---------- */
 const vaciarBtn = document.getElementById("vaciarCarrito");
 if (vaciarBtn) {
     vaciarBtn.addEventListener("click", () => {
@@ -437,7 +432,6 @@ if (vaciarBtn) {
                 }
             });
         } else {
-            // fallback si SweetAlert no está cargado
             if (confirm("¿Estás seguro de que quieres vaciar el carrito?")) {
                 carrito = [];
                 cuponAplicado = null;
@@ -448,7 +442,6 @@ if (vaciarBtn) {
     });
 }
 
-// Inicializar carrito
 async function inicializarCarrito() {
     try {
         configuracion = await obtenerConfiguracion();
@@ -458,6 +451,4 @@ async function inicializarCarrito() {
         mostrarNotificacion("Error al cargar la configuración", "error");
     }
 }
-
-// Iniciar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', inicializarCarrito);

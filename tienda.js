@@ -25,7 +25,7 @@ async function obtenerConfiguracion() {
     }
 }
 
-// Obtener productos desde API
+// Obtener productos
 async function obtenerProductos() {
   try {
     mostrarLoader(true);
@@ -34,7 +34,7 @@ async function obtenerProductos() {
 
     const data = await res.json();
     localStorage.setItem("productos", JSON.stringify(data));
-    poblarCategorias(); // <-- Agrega esta línea aquí
+    poblarCategorias();
     mostrarProductos(data);
     mostrarLoader(false);
   } catch (err) {
@@ -63,13 +63,7 @@ function mostrarProductos(lista) {
         ? Number(producto.priceCents) / 100
         : 0;
     const id = String(producto.id);
-
-    // Corrige la ruta de la imagen
     let imagen = producto.image || producto.imagen || "products/default.jpg";
-    // Si la ruta comienza con "../products/", reemplázala por "products/"
-    if (imagen.startsWith("../products/")) {
-        imagen = imagen.replace("../products/", "products/");
-    }
 
     card.innerHTML = `
       <img src="${imagen}" alt="${nombre}" class="evento-img">
@@ -119,12 +113,9 @@ function agregarAlCarrito(id) {
         : 0;
     const idStr = String(producto.id);
 
-    // Definir correctamente la imagen
+   
     let imagen = producto.image || producto.imagen || "products/default.jpg";
-    if (imagen.startsWith("../products/")) {
-        imagen = imagen.replace("../products/", "products/");
-    }
-
+    
     if (existente) {
       existente.cantidad++;
     } else {

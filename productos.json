@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "image": "../products/moisturizer.jpg",
+    "image": "products/moisturizer.jpg",
     "name": "Hidratante Facial",
     "priceCents": 2000,
     "category": "Belleza y Cuidado Personal",
@@ -9,7 +9,7 @@
   },
   {
     "id": "2",
-    "image": "../products/shampoo.jpg",
+    "image": "products/shampoo.jpg",
     "name": "Shampoo Anticaspa",
     "priceCents": 1500,
     "category": "Belleza y Cuidado Personal",
@@ -17,7 +17,7 @@
   },
   {
     "id": "3",
-    "image": "../products/foundation.jpg",
+    "image": "products/foundation.jpg",
     "name": "Base Líquida Mate",
     "priceCents": 2200,
     "category": "Belleza y Cuidado Personal",
@@ -25,7 +25,7 @@
   },
   {
     "id": "4",
-    "image": "../products/perfume.jpg",
+    "image": "products/perfume.jpg",
     "name": "Eau de Parfum - Aroma Floral",
     "priceCents": 3500,
     "category": "Belleza y Cuidado Personal",
@@ -33,7 +33,7 @@
   },
   {
     "id": "5",
-    "image": "../products/shaving-kit.jpg",
+    "image": "products/shaving-kit.jpg",
     "name": "Kit de Afeitado para Hombre",
     "priceCents": 1800,
     "category": "Belleza y Cuidado Personal",
@@ -41,7 +41,7 @@
   },
   {
     "id": "6",
-    "image": "../products/body-wash.jpg",
+    "image": "products/body-wash.jpg",
     "name": "Gel de Baño Nutritivo",
     "priceCents": 1300,
     "category": "Belleza y Cuidado Personal",
@@ -49,7 +49,7 @@
   },
   {
     "id": "7",
-    "image": "../products/nail-polish.jpg",
+    "image": "products/nail-polish.jpg",
     "name": "Esmalte de Uñas Brillante",
     "priceCents": 800,
     "category": "Belleza y Cuidado Personal",
@@ -57,7 +57,7 @@
   },
   {
     "id": "8",
-    "image": "../products/conditioner.jpg",
+    "image": "products/conditioner.jpg",
     "name": "Acondicionador Hidratante",
     "priceCents": 1700,
     "category": "Belleza y Cuidado Personal",
@@ -65,7 +65,7 @@
   },
   {
     "id": "9",
-    "image": "../products/razor.jpg",
+    "image": "products/razor.jpg",
     "name": "Afeitadora de Triple Hoja",
     "priceCents": 1000,
     "category": "Belleza y Cuidado Personal",
@@ -73,7 +73,7 @@
   },
   {
     "id": "10",
-    "image": "../products/vitamin-supplement.jpg",
+    "image": "products/vitamin-supplement.jpg",
     "name": "Suplemento de Vitamina C",
     "priceCents": 3000,
     "category": "Belleza y Cuidado Personal",
@@ -81,7 +81,7 @@
   },
   {
     "id": "11",
-    "image": "../products/wireless-headphones.jpg",
+    "image": "products/wireless-headphones.jpg",
     "name": "Auriculares Bluetooth Inalámbricos",
     "priceCents": 7999,
     "category": "Electrónica y Gadgets",
@@ -89,7 +89,7 @@
   },
   {
     "id": "12",
-    "image": "../products/smartphone.jpg",
+    "image": "products/smartphone.jpg",
     "name": "Smartphone - 128GB",
     "priceCents": 45000,
     "category": "Electrónica y Gadgets",
@@ -97,7 +97,7 @@
   },
   {
     "id": "13",
-    "image": "../products/4k-tv.jpg",
+    "image": "products/4k-tv.jpg",
     "name": "TV 4K Ultra HD 55 Pulgadas",
     "priceCents": 90000,
     "category": "Electrónica y Gadgets",
@@ -105,7 +105,7 @@
   },
   {
     "id": "14",
-    "image": "../products/laptop.jpg",
+    "image": "products/laptop.jpg",
     "name": "Laptop Gamer - 16GB RAM, 512GB SSD",
     "priceCents": 120000,
     "category": "Electrónica y Gadgets",
@@ -113,7 +113,7 @@
   },
   {
     "id": "15",
-    "image": "../products/smartwatch.jpg",
+    "image": "products/smartwatch.jpg",
     "name": "Reloj Inteligente - Monitor de Actividad",
     "priceCents": 15000,
     "category": "Electrónica y Gadgets",
@@ -121,7 +121,7 @@
   },
   {
     "id": "16",
-    "image": "../products/tablet.jpg",
+    "image": "products/tablet.jpg",
     "name": "Tablet Android 10.1 Pulgadas",
     "priceCents": 20000,
     "category": "Electrónica y Gadgets",
@@ -129,7 +129,7 @@
   },
   {
     "id": "17",
-    "image": "../products/bluetooth-speaker.jpg",
+    "image": "products/bluetooth-speaker.jpg",
     "name": "Parlante Bluetooth Portátil",
     "priceCents": 5000,
     "category": "Electrónica y Gadgets",
@@ -137,7 +137,7 @@
   },
   {
     "id": "18",
-    "image": "../products/dslr-camera.jpg",
+    "image": "products/dslr-camera.jpg",
     "name": "Cámara Réflex Digital - 24MP",
     "priceCents": 85000,
     "category": "Electrónica y Gadgets",
@@ -145,7 +145,7 @@
   },
   {
     "id": "19",
-    "image": "../products/usb-drive.jpg",
+    "image": "products/usb-drive.jpg",
     "name": "Pendrive USB - 64GB",
     "priceCents": 1200,
     "category": "Electrónica y Gadgets",
@@ -153,7 +153,7 @@
   },
   {
     "id": "20",
-    "image": "../products/action-camera.jpg",
+    "image": "products/action-camera.jpg",
     "name": "Cámara de Acción 4K",
     "priceCents": 18000,
     "category": "Electrónica y Gadgets",
@@ -161,7 +161,7 @@
   },
   {
     "id": "21",
-    "image": "../products/denim-jacket.jpg",
+    "image": "products/denim-jacket.jpg",
     "name": "Campera de Jean para Hombre",
     "priceCents": 3500,
     "category": "Moda y Ropa",
@@ -169,7 +169,7 @@
   },
   {
     "id": "22",
-    "image": "../products/maxi-dress.jpg",
+    "image": "products/maxi-dress.jpg",
     "name": "Vestido Largo Floral para Mujer",
     "priceCents": 4200,
     "category": "Moda y Ropa",
@@ -177,7 +177,7 @@
   },
   {
     "id": "23",
-    "image": "../products/sneakers.jpg",
+    "image": "products/sneakers.jpg",
     "name": "Zapatillas Urbanas Unisex",
     "priceCents": 5500,
     "category": "Moda y Ropa",
@@ -185,7 +185,7 @@
   },
   {
     "id": "24",
-    "image": "../products/leather-bag.jpg",
+    "image": "products/leather-bag.jpg",
     "name": "Bolso Tote de Cuero",
     "priceCents": 6000,
     "category": "Moda y Ropa",
@@ -193,7 +193,7 @@
   },
   {
     "id": "25",
-    "image": "../products/sunglasses.jpg",
+    "image": "products/sunglasses.jpg",
     "name": "Anteojos de Sol Polarizados",
     "priceCents": 2500,
     "category": "Moda y Ropa",
@@ -201,7 +201,7 @@
   },
   {
     "id": "26",
-    "image": "../products/formal-shirt.jpg",
+    "image": "products/formal-shirt.jpg",
     "name": "Camisa Formal para Hombre",
     "priceCents": 3100,
     "category": "Moda y Ropa",
@@ -209,7 +209,7 @@
   },
   {
     "id": "27",
-    "image": "../products/heels.jpg",
+    "image": "products/heels.jpg",
     "name": "Zapatos de Taco Alto para Mujer",
     "priceCents": 4500,
     "category": "Moda y Ropa",
@@ -217,7 +217,7 @@
   },
   {
     "id": "28",
-    "image": "../products/t-shirt.jpg",
+    "image": "products/t-shirt.jpg",
     "name": "Remera Estampada",
     "priceCents": 1800,
     "category": "Moda y Ropa",
@@ -225,7 +225,7 @@
   },
   {
     "id": "29",
-    "image": "../products/handbag.jpg",
+    "image": "products/handbag.jpg",
     "name": "Cartera de Diseño para Mujer",
     "priceCents": 7500,
     "category": "Moda y Ropa",
@@ -233,7 +233,7 @@
   },
   {
     "id": "30",
-    "image": "../products/slippers.jpg",
+    "image": "products/slippers.jpg",
     "name": "Ojotas Cómodas",
     "priceCents": 1200,
     "category": "Moda y Ropa",
@@ -241,7 +241,7 @@
   },
   {
     "id": "31",
-    "image": "../products/sofa.jpg",
+    "image": "products/sofa.jpg",
     "name": "Sofá Moderno de Cuero",
     "priceCents": 120000,
     "category": "Hogar y Cocina",
@@ -249,7 +249,7 @@
   },
   {
     "id": "32",
-    "image": "../products/refrigerator.jpg",
+    "image": "products/refrigerator.jpg",
     "name": "Heladera de Acero Inoxidable",
     "priceCents": 95000,
     "category": "Hogar y Cocina",
@@ -257,7 +257,7 @@
   },
   {
     "id": "33",
-    "image": "../products/vacuum-cleaner.jpg",
+    "image": "products/vacuum-cleaner.jpg",
     "name": "Aspiradora Inalámbrica",
     "priceCents": 18000,
     "category": "Hogar y Cocina",
@@ -265,7 +265,7 @@
   },
   {
     "id": "34",
-    "image": "../products/cookware.jpg",
+    "image": "products/cookware.jpg",
     "name": "Set de Ollas Antiadherentes",
     "priceCents": 25000,
     "category": "Hogar y Cocina",
@@ -273,7 +273,7 @@
   },
   {
     "id": "35",
-    "image": "../products/dinnerware.jpg",
+    "image": "products/dinnerware.jpg",
     "name": "Set de Vajilla de Porcelana",
     "priceCents": 16000,
     "category": "Hogar y Cocina",
@@ -281,7 +281,7 @@
   },
   {
     "id": "36",
-    "image": "../products/mattress.jpg",
+    "image": "products/mattress.jpg",
     "name": "Colchón de Espuma Viscoelástica",
     "priceCents": 75000,
     "category": "Hogar y Cocina",
@@ -289,7 +289,7 @@
   },
   {
     "id": "37",
-    "image": "../products/table-lamp.jpg",
+    "image": "products/table-lamp.jpg",
     "name": "Lámpara de Mesa Contemporánea",
     "priceCents": 5000,
     "category": "Hogar y Cocina",
@@ -297,7 +297,7 @@
   },
   {
     "id": "38",
-    "image": "../products/rug.jpg",
+    "image": "products/rug.jpg",
     "name": "Alfombra Tejida a Mano",
     "priceCents": 20000,
     "category": "Hogar y Cocina",
@@ -305,7 +305,7 @@
   },
   {
     "id": "39",
-    "image": "../products/storage-boxes.jpg",
+    "image": "products/storage-boxes.jpg",
     "name": "Cajas Organizadoras Plásticas - Set x4",
     "priceCents": 8000,
     "category": "Hogar y Cocina",
@@ -313,7 +313,7 @@
   },
   {
     "id": "40",
-    "image": "../products/cleaning-supplies.jpg",
+    "image": "products/cleaning-supplies.jpg",
     "name": "Kit de Limpieza Ecológico",
     "priceCents": 10000,
     "category": "Hogar y Cocina",
@@ -321,7 +321,7 @@
   },
   {
     "id": "41",
-    "image": "../products/treadmill.jpg",
+    "image": "products/treadmill.jpg",
     "name": "Cinta de Correr Eléctrica Plegable",
     "priceCents": 350000,
     "category": "Salud y Fitness",
@@ -329,7 +329,7 @@
   },
   {
     "id": "42",
-    "image": "../products/dumbbells.jpg",
+    "image": "products/dumbbells.jpg",
     "name": "Set de Mancuernas Ajustables - 20kg",
     "priceCents": 60000,
     "category": "Salud y Fitness",
@@ -337,7 +337,7 @@
   },
   {
     "id": "43",
-    "image": "../products/protein-powder.jpg",
+    "image": "products/protein-powder.jpg",
     "name": "Proteína en Polvo Whey - 2kg",
     "priceCents": 35000,
     "category": "Salud y Fitness",
@@ -345,7 +345,7 @@
   },
   {
     "id": "44",
-    "image": "../products/blood-pressure-monitor.jpg",
+    "image": "products/blood-pressure-monitor.jpg",
     "name": "Tensiómetro Digital",
     "priceCents": 22000,
     "category": "Salud y Fitness",
@@ -353,7 +353,7 @@
   },
   {
     "id": "45",
-    "image": "../products/first-aid-kit.jpg",
+    "image": "products/first-aid-kit.jpg",
     "name": "Botiquín de Primeros Auxilios Compacto",
     "priceCents": 12000,
     "category": "Salud y Fitness",
@@ -361,7 +361,7 @@
   },
   {
     "id": "46",
-    "image": "../products/hand-sanitizer.jpg",
+    "image": "products/hand-sanitizer.jpg",
     "name": "Alcohol en Gel - 500ml",
     "priceCents": 800,
     "category": "Salud y Fitness",
@@ -369,7 +369,7 @@
   },
   {
     "id": "47",
-    "image": "../products/gloves.jpg",
+    "image": "products/gloves.jpg",
     "name": "Guantes para Entrenamiento - Par",
     "priceCents": 3000,
     "category": "Salud y Fitness",
@@ -377,7 +377,7 @@
   },
   {
     "id": "48",
-    "image": "../products/thermometer.jpg",
+    "image": "products/thermometer.jpg",
     "name": "Termómetro Digital Infrarrojo",
     "priceCents": 15000,
     "category": "Salud y Fitness",
@@ -385,7 +385,7 @@
   },
   {
     "id": "49",
-    "image": "../products/yoga-mat.jpg",
+    "image": "products/yoga-mat.jpg",
     "name": "Colchoneta Antideslizante para Yoga",
     "priceCents": 5000,
     "category": "Salud y Fitness",
@@ -393,7 +393,7 @@
   },
   {
     "id": "50",
-    "image": "../products/knee-pads.jpg",
+    "image": "products/knee-pads.jpg",
     "name": "Rodilleras Ajustables",
     "priceCents": 4000,
     "category": "Salud y Fitness",

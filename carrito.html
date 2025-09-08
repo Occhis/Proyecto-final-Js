@@ -106,7 +106,7 @@
             <div class="checkout-column">
                 <h3>💳 Método de pago</h3>
                 <div id="metodos-pago" class="metodos-pago">
-                    <!-- Los métodos de pago se cargarán dinámicamente desde config.json -->
+                    
                 </div>
                 
                 <div class="finalizar-compra">
@@ -124,7 +124,6 @@
     <script src="carrito.js"></script>
     
     <script>
-        // Mostrar sección de cupones cuando hay productos en el carrito
         document.addEventListener('DOMContentLoaded', function() {
             const observer = new MutationObserver(function(mutations) {
                 const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
