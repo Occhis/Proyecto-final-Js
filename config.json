@@ -1,0 +1,72 @@
+{
+  "tienda": {
+    "nombre": "E-Commerce Shopping",
+    "moneda": "USD",
+    "simboloMoneda": "$",
+    "impuestos": 0.21,
+    "envioGratis": 100,
+    "costoEnvio": 15,
+    "descuentoEfectivo": 0.05
+  },
+  "metodosPago": [
+    {
+      "id": 1,
+      "nombre": "Tarjeta de Crédito",
+      "descripcion": "Visa, Mastercard, American Express",
+      "icono": "💳",
+      "activo": true,
+      "descuento": 0
+    },
+    {
+      "id": 2,
+      "nombre": "Efectivo",
+      "descripcion": "5% de descuento pagando en efectivo",
+      "icono": "💵",
+      "activo": true,
+      "descuento": 0.05
+    },
+    {
+      "id": 3,
+      "nombre": "PayPal",
+      "descripcion": "Pago seguro con PayPal",
+      "icono": "🅿️",
+      "activo": true,
+      "descuento": 0
+    }
+  ],
+  "cupones": [
+    {
+      "codigo": "DESCUENTO10",
+      "descuento": 0.10,
+      "descripcion": "10% de descuento en tu compra",
+      "minCompra": 50,
+      "activo": true
+    },
+    {
+      "codigo": "NUEVOCLIENTE",
+      "descuento": 0.15,
+      "descripcion": "15% de descuento para nuevos clientes",
+      "minCompra": 30,
+      "activo": true
+    },
+    {
+      "codigo": "ENVIOGRATIS",
+      "descuento": 0,
+      "descripcion": "Envío gratis sin mínimo de compra",
+      "envioGratis": true,
+      "activo": true
+    }
+  ],
+  "usuario": {
+    "nombre": "Juan Pérez",
+    "email": "juan@email.com",
+    "telefono": "+54 11 1234-5678",
+    "direccion": {
+      "calle": "Av. Corrientes 1234",
+      "ciudad": "Buenos Aires",
+      "provincia": "CABA",
+      "codigoPostal": "1043",
+      "pais": "Argentina"
+    }
+  }
+}

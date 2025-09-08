@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.10.1/sweetalert2.all.min.js"></script>
+</head>
+<body>
+
+    <header>
+    <div class="navbar-container">
+        <h1>🛒 Carrito de Compras</h1>
+        <nav class="nav-links">
+            <a class="nav-link" href="index.html">← Seguir Comprando</a>
+            <div class="carrito-contador">
+                <span id="contador-carrito">0</span>
+            </div>
+        </nav>
+    </div>
+</header>
+    <!-- Productos en el carrito -->
+    <div id="carrito"></div>
+
+    <!-- Sección de cupones -->
+    <div class="cupon-section" id="cupon-section" style="display: none;">
+        <h3>¿Tienes un cupón de descuento?</h3>
+        <div id="seccion-cupon">
+            <div class="cupon-input">
+                <input type="text" id="input-cupon" placeholder="Código de cupón (ej: DESCUENTO10)">
+                <button onclick="aplicarCupon()" class="btn-aplicar-cupon">Aplicar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resumen de compra -->
+    <div class="total-container">
+        <div class="resumen-compra">
+            <h3>Resumen de compra</h3>
+            <div class="linea-total">
+                <span>Subtotal:</span>
+                <span>$<span id="subtotal">0.00</span></span>
+            </div>
+            <div class="linea-total descuento-row" style="display: none;">
+                <span>Descuento:</span>
+                <span class="descuento">-$<span id="descuento">0.00</span></span>
+            </div>
+            <div class="linea-total">
+                <span>Impuestos:</span>
+                <span>$<span id="impuestos">0.00</span></span>
+            </div>
+            <div class="linea-total envio-row">
+                <span>Envío:</span>
+                <span id="envio">$0.00</span>
+            </div>
+            <hr>
+            <div class="linea-total total-final">
+                <strong>Total: $<span id="total">0.00</span></strong>
+            </div>
+        </div>
+        <button class="vaciar-btn" id="vaciarCarrito">🗑️ Vaciar Carrito</button>
+    </div>
+
+    <!-- Sección de checkout -->
+    <div id="checkout-section" class="checkout-section" style="display: none;">
+        <div class="checkout-container">
+            <div class="checkout-column">
+                <h3>📋 Datos de entrega</h3>
+                <form id="form-checkout" class="form-checkout">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="ciudad">Ciudad:</label>
+                            <input type="text" id="ciudad" name="ciudad" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="codigo-postal">Código postal:</label>
+                            <input type="text" id="codigo-postal" name="codigo-postal" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="checkout-column">
+                <h3>💳 Método de pago</h3>
+                <div id="metodos-pago" class="metodos-pago">
+                    <!-- Los métodos de pago se cargarán dinámicamente desde config.json -->
+                </div>
+                
+                <div class="finalizar-compra">
+                    <button onclick="finalizarCompra()" class="btn-finalizar-compra">
+                        💳 Finalizar Compra
+                    </button>
+                    <p class="seguridad-info">
+                        🔒 Compra 100% segura y protegida
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="carrito.js"></script>
+    
+    <script>
+        // Mostrar sección de cupones cuando hay productos en el carrito
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new MutationObserver(function(mutations) {
+                const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+                const cuponSection = document.getElementById("cupon-section");
+                if (cuponSection) {
+                    cuponSection.style.display = carrito.length > 0 ? "block" : "none";
+                }
+            });
+            
+            observer.observe(document.getElementById("carrito"), { 
+                childList: true, 
+                subtree: true 
+            });
+        });
+    </script>
+</body>
+</html>
