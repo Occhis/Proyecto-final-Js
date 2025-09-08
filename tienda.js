@@ -114,11 +114,16 @@ function agregarAlCarrito(id) {
     const existente = carrito.find(item => String(item.id) === String(producto.id));
 
     const nombre = producto.title || producto.name || "Sin nombre";
-    // Lee el precio en centavos y conviértelo a número decimal
     const precio = producto.priceCents !== undefined
         ? Number(producto.priceCents) / 100
         : 0;
     const idStr = String(producto.id);
+
+    // Definir correctamente la imagen
+    let imagen = producto.image || producto.imagen || "products/default.jpg";
+    if (imagen.startsWith("../products/")) {
+        imagen = imagen.replace("../products/", "products/");
+    }
 
     if (existente) {
       existente.cantidad++;
